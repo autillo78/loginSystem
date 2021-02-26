@@ -14,15 +14,31 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
+            // COLUMNS
+            $table->smallIncrements('id');
+            $table->string('name', 30);
+            $table->string('middlename', 30)->nullable();
+            $table->string('lastname', 80);
             $table->string('email')->unique();
+            $table->string('phone', 30)->nullable();
+            $table->string('team', 40)->nullable();
+            
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->foreignId('current_team_id')->nullable();
             $table->text('profile_photo_path')->nullable();
-            $table->timestamps();
+            $table->boolean('active')->default(0);
+            $table->timestamps();  
+
+            // INDEX
+	    
+            // UNIQUE
+            
+            // PRIMARY KEYS
+            
+            // FOREIGN KEYS
+            
         });
     }
 

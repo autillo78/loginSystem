@@ -127,7 +127,7 @@ return [
     'classes_content_header' => '',
     'classes_content' => '',
     'classes_sidebar' => ' bg-navy nav-compact',
-    'classes_sidebar_nav' => 'bg-info rounded',
+    //'classes_sidebar_nav' => 'bg-info rounded',
     'classes_topnav' => 'navbar-light navbar-dark bg-info',
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
@@ -150,7 +150,7 @@ return [
     'sidebar_collapse_remember' => false,
     'sidebar_collapse_remember_no_transition' => false,
     'sidebar_scrollbar_theme' => 'os-theme-light',
-    //'sidebar_scrollbar_auto_hide' => 'l',
+    'sidebar_scrollbar_auto_hide' => 'l',
     'sidebar_nav_accordion' => true,
     'sidebar_nav_animation_speed' => 300,
 
@@ -168,10 +168,10 @@ return [
 
     'right_sidebar' => true,
     'right_sidebar_icon' => 'fas fa-cogs',
-    'right_sidebar_theme' => 'light',
+    'right_sidebar_theme' => 'dark',
     'right_sidebar_slide' => true,
     'right_sidebar_push' => false,
-    'right_sidebar_scrollbar_theme' => 'os-theme-light',
+    'right_sidebar_scrollbar_theme' => 'os-theme-dark',
     'right_sidebar_scrollbar_auto_hide' => 'l',
 
     /*
@@ -241,7 +241,7 @@ return [
         ],
         [
             'text'    => 'Dashboard',
-            'url'     => 'admin/pages',
+            'url'     => '/dashboard',
             'icon'    => 'fas fa-chart-area',
             'classes' => 'text-white bg-info m-1',
             //'label'       => 4,

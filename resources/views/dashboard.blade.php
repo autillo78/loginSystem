@@ -16,10 +16,14 @@
 
 @extends('adminlte::page')
 
-@section('title', 'Login Test')
+@include('layouts.right-side-bar')
+
+@include('layouts.header-info')
 
 @section('content_header')
+@stop
 
+@section('content')
     <div class="main">
         <h1>Dashboard</h1>
 
@@ -38,24 +42,4 @@
         </div>
 
     </div>
-@stop
-
-@section('right-sidebar')
-    <div style="width: 500px">
-        aaa
-    </div>
-@stop
-
-@section('content')
-    <p>Welcome to this beautiful admin panel.</p>
-@stop
-
-@section('css')
-    <link rel="stylesheet" href="/css/admin_custom.css">
-    <link rel="stylesheet" href="{{asset('/css/styles.css')}}">
-@stop
-
-@section('js')
-    <script src="{{asset('/js/backgroundImages.js')}}"></script>
-    <script> console.log('Hi!'); </script>
 @stop

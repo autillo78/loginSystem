@@ -17,9 +17,9 @@ class CreatePermissionsTable extends Migration
             
             // COLUMNS
             $table->smallIncrements('id');
-            $table->string('permission', 30);
+            $table->string('name', 30);
             $table->string('slug', 30);
-            $table->string('description')->nullable();
+            $table->string('desc')->nullable();
                         
             // INDEX
 	    

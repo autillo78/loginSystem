@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Privileges\PermissionController;
+use App\Http\Controllers\Privileges\RoleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('/dashboard');
+    return view('/welcome');
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
+Route::resource('/permissions', PermissionController::class)->names('permissions');
+
+Route::resource('/roles', RoleController::class)->names('roles');

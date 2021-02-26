@@ -17,9 +17,9 @@ class CreateRolesTable extends Migration
             
             // COLUMNS
             $table->smallIncrements('id');
-            $table->string('role',30);
+            $table->string('name',30);
             $table->string('slug',30);
-            $table->string('description')->nullable();
+            $table->string('desc')->nullable();
             $table->boolean('full_access')->default(0);
                         
             // INDEX
