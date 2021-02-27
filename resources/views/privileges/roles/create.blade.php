@@ -43,13 +43,13 @@
                 <div class="col-3">
                     <div class="row">
                         <div class="col-5">
-                            <label for="full_access">Full Access: </label>
+                            <label for="admin">Admin. </label>
                         </div>
                         <div class="col-3">
-                            <input type="radio" name="full_access" id="full_access" value="1"> yes
+                            <input type="radio" name="admin" id="admin" value="1"> yes
                         </div>
                         <div class="col-3">
-                            <input type="radio" name="full_access" id="full_access" value="0" checked> no
+                            <input type="radio" name="admin" id="admin" value="0" checked> no
                         </div>
                     </div>
                 </div>

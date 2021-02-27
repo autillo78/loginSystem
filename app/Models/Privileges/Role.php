@@ -20,7 +20,7 @@ class Role extends Model
         'name',
         'slug',
         'desc',
-        'full_access'
+        'admin'
     ];
 
 

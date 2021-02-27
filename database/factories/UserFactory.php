@@ -26,6 +26,7 @@ class UserFactory extends Factory
             'name'       => $this->faker->firstName,
             'middlename' => $this->faker->name,
             'lastname'   => $this->faker->lastName,
+            'team'   => $this->faker->jobTitle,
             'phone'      => $this->faker->phoneNumber,
             'email'      => $this->faker->unique()->safeEmail,
             'email_verified_at' => now(),

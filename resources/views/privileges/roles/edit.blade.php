@@ -42,15 +42,15 @@
                 <div class="col-3">
                     <div class="row">
                         <div class="col-5">
-                            <label for="full_access">Full Access: </label>
+                            <label for="admin">Admin. </label>
                         </div>
                         <div class="col-3">
-                            <input type="radio" name="full_access" id="full_access"
-                                   {{$role->full_access ? 'checked' : ''}}> yes
+                            <input type="radio" name="admin" id="admin"
+                                   {{$role->admin ? 'checked' : ''}}> yes
                         </div>
                         <div class="col-3">
-                            <input type="radio" name="full_access" id="full_access"
-                                   {{!$role->full_access ? 'checked' : ''}}> no
+                            <input type="radio" name="admin" id="admin"
+                                   {{!$role->admin ? 'checked' : ''}}> no
                         </div>
                     </div>
                 </div>

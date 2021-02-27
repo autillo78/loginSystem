@@ -36,9 +36,9 @@
                                 {{$permission->name}}@if(!$loop->last),@endif
                             @endforeach
                         </td>
-                        <td>{{$role->full_access ? 'yes' : 'no'}}</td>
+                        <td>{{$role->admin ? 'yes' : 'no'}}</td>
                         <td>
-                            <a href="{{route('roles.show', $role->id)}}" class="btn btn-sm btn-outline-info float-right">Show</a>
+                            <a href="{{route('roles.edit', $role->id)}}" class="btn btn-sm btn-outline-info float-right">Edit</a>
                         </td>
                     </tr>
                     @endforeach

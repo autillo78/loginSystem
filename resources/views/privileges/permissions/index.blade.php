@@ -9,6 +9,8 @@
 
 @section('content')
 
+@can('has-access', 'books.show')
+    
 <div class="container">
     <div class="card">
         <div class="card-header">
@@ -39,4 +41,6 @@
         </div>
     </div>
 </div>
+
+@endcan
 @stop

@@ -6,7 +6,7 @@
     <b>Privileges</b>
     <div class="row mt-2">
         <div class="col-6">
-            <a href="{{route('roles.index')}}" class="btn btn-sm btn-primary btn-block">Users</a>
+            <a href="{{route('users.index')}}" class="btn btn-sm btn-primary btn-block">Users</a>
         </div>
         
     </div>

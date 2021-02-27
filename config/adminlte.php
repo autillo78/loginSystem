@@ -254,12 +254,13 @@ return [
             'classes' => 'text-white bg-info m-1',
             //'label'       => 4,
             //'label_color' => 'success',
-        ],
+        ],  
         [
             'text'    => 'Books & Readings',
             'url'     => 'admin/pages',
             'icon'    => 'fas fa-book',
             'classes' => 'text-white bg-info m-1',
+            'can'     => ['has-access'=>'aaaa'],
             'submenu' => [
                 [
                     'text'    => 'Books',

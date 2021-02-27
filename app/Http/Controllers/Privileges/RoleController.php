@@ -46,7 +46,7 @@ class RoleController extends Controller
             'name' => 'required | string | max:30',
             'slug' => 'required | string | max:30',
             'desc' => 'nullable | string | max:255',
-            'full_access' => 'required | boolean',
+            'admin' => 'required | boolean',
         ];
 
         $messages = [
@@ -77,10 +77,7 @@ class RoleController extends Controller
      */
     public function show($id)
     {
-        $role = Role::find($id);
-        $allPermissions = Permission::all();
-
-        return view('privileges.roles.show', compact('role', 'allPermissions'));
+        //
     }
 
     /**
@@ -91,7 +88,10 @@ class RoleController extends Controller
      */
     public function edit($id)
     {
-        //
+        $role = Role::find($id);
+        $allPermissions = Permission::all();
+
+        return view('privileges.roles.edit', compact('role', 'allPermissions'));
     }
 
     /**
